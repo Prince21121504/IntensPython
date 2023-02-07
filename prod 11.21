@@ -1,0 +1,11 @@
+from random import randint
+mas = []
+now = 0
+nom = 0
+while len(mas) != 20:
+    nom += 1
+    now = randint(-20, 20)
+    if now not in mas:
+        mas.append(now)
+print(mas)
+print('Было чисел за всьо время: {}'.format(nom))
