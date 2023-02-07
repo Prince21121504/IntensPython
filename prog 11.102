@@ -1,0 +1,14 @@
+from random import randint
+ 
+ 
+def blizko(L):
+    N = L[:]
+    av=sum(L)/len(L) 
+    for i, k in enumerate(L):
+        L[i]=abs(k-av) 
+    v= min(L)
+    return N[L.index(v)]
+    
+ 
+A = [randint(1, 9) for i in range(5)]
+print(blizko(A))
